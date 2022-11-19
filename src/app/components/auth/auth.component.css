@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: #1a1a1a
+}
+.d-flex{
+    padding-left: 20%;
+}
+.card1 {
+    height: 400px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+
+.card2 {
+    height: 400px;
+    width: 100%;
+    border: none;
+    background-color: #000;
+    border-radius: 8px;
+    transition:all 0.5s;
+}
+
+.login {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 10px
+}
+
+.input-field span {
+    font-size: 15px;
+    color: #000000;
+    margin-left: 10px
+}
+
+.form-control {
+    font-size: 13px;
+    color: #212529;
+    font-weight: 500;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #9b9b9b;
+    box-shadow: none
+}
+
+.btn {
+    height: 35px;
+    width: 100%;
+    background-color: #000;
+    font-weight: 500;
+    color: #cdcdc4;
+    border: none;
+    font-size: 15px;
+    padding-left: 0px;
+}
+
+.text1 .forget {
+    color: #767676;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.text2 span {
+    font-weight: 500;
+    color: #7a7778;
+    font-size: 16px;
+}
+
+.text2 .register {
+    color: #4f4942;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form-text-danger{
+    color: rgb(199, 13, 13);
+    font-size: 12px;
+}
+

@@ -1,0 +1,102 @@
+<!-- ADD Product Page -->
+
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!--Header-->
+      <h4 class="title" id="myModalHeading">
+        <img src="../../../assets/images/add-product-in-stock.webp" height="50px" width="50px">ADD PRODUCT</h4>
+  
+      <!--Body-->
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+
+
+      <!-- bootstrapped -->
+      <form #form="ngForm" (ngSubmit)="addProduct()" ngNativeValidate>
+        <div class="form-group row">
+          <label for="img" class="col-sm-2 col-form-label">Image Link</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="imgsrc" placeholder="Enter image link of product" required ngModel #img="ngModel">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="title" class="col-sm-2 col-form-label">Title</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="title" placeholder="Enter product's title" required ngModel #title="ngModel">
+          </div>
+        </div>
+        <div class="form-group row">
+            <label for="price" class="col-sm-2 col-form-label">Price</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="price" placeholder="Enter product's price" required ngModel #price="ngModel">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Description</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="description" placeholder="Enter product's description" ngModel #description="ngModel">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="quantity" class="col-sm-2 col-form-label">Quantity</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="quantity" placeholder="Enter product's quantity" required ngModel #quantity="ngModel">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="price" class="col-sm-2 col-form-label">Category</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="category" placeholder="Enter product's category" required ngModel #category="ngModel">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+              <label class="col-form-label col-sm-2 pt-0">Gender</label>
+              <div class="col-sm-10">
+                <div class="form-check-inline">
+                  <input class="form-check-input" type="radio" name="gender" value="men" ngModel #men="ngModel">
+                  <label class="form-check-label" for="men">  Men</label>
+                </div>
+                <div class="form-check-inline">
+                  <input class="form-check-input" type="radio" name="gender" value="women" ngModel #women="ngModel">
+                  <label class="form-check-label" for="women">  Women</label>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" (click)="close()">
+              Close
+            </button>
+            &nbsp;
+            <button
+              class="btn btn-primary"
+              type="submit"
+              [disabled]="form.invalid"
+            >
+              Submit
+            </button>
+          </div>
+       </form>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Success</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      The product is added successfully!!
+    </div>
+  </div>
+</div>
+
+  

@@ -1,0 +1,49 @@
+/* /.['/* .about-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+}
+about-us {
+    background-image: url('../../../assets/storehouse_logo.jpg'); 
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* background-size: 100% 100%; 
+*/
+.about{
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-image: url('../../../assets/images/storehouse_logo.jpg'); 
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: center;
+}
+.active a {
+    color: grey;
+    border-right: 1px solid rgb(65, 61, 61);
+    font-size: small;
+    
+  }
+  .yellow {
+    background-color: yellow;
+  }
+  li a {
+    color: rgb(78, 75, 75);
+    font-size: small;
+  }
+  .page_heading {
+    font-family: "Bauhaus 93";
+    font-size: 30px;
+    text-decoration: underline;
+    color: rgb(88, 84, 84);
+    margin-top: 20px;
+  }
+  .about {
+    font-family: "Arial monospaced for SAP";
+  }
+  

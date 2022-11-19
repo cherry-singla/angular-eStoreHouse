@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-light navbar1">
+    <div  class ="container-fluid">
+      <div class="row navbar2">
+        <div class="col-sm-4">
+          <div
+            class="collapse navbar-collapse"
+            id="myNavbar">
+            <ul class="navbar-nav mr-auto navLinks">
+              <li class="nav-item">
+                <a class="nav-link"
+                  routerLink="/home"
+                  routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"
+                  routerLink="/about-us"
+                  routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  >ABOUT US</a
+                >
+              </li>
+        
+              <li *ngIf="isLoggedIn" class="nav-item">
+                <a class="nav-link"
+                  routerLink="/products"
+                  routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                  >PRODUCTS</a
+                >
+              </li>
+            </ul></div>
+        </div>
+        <div class="col-sm-4">
+          <div class="header">
+            StoreHouse
+          </div>
+        </div>
+        <div class="col-sm" id="signInDiv">
+          <button id="signInBtn" *ngIf="!isLoggedIn" type="button" class="btn btn-outline-dark btn-sm"  routerLink="/sign-in"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"><strong>Sign In</strong></button>
+
+          <button *ngIf="isLoggedIn" type="button" class="btn btn-outline-dark btn-sm" (click)="onSignOut()"><strong>Sign Out</strong></button>
+        </div>
+      </div>
+    </div>
+  </nav> 
+  
+  
+  

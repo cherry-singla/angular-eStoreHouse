@@ -1,0 +1,68 @@
+<!-- Header Component -->
+
+<div class="container-fluid">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="image">
+          <img src="{{ productDetails.imgsrc }}" width="280" height="400px" />
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right">
+        <div class="container-fluid">
+          <div class="row txt">
+            <h3>{{productDetails.title }}</h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="retailprice orange">
+                Price:<span>&nbsp;{{ productDetails.price }}</span>
+              </div>
+              <div class="retailprice">
+                <p>Product ID:&nbsp; PROD-SH-{{productDetails.gender.charAt(0)}}-{{productDetails.id}}</p>
+              </div>
+              <div class="retailprice">
+                <h5>Available Stock: {{ productDetails.quantity }}</h5>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="row">
+            <h4 class="page_heading">Choose Options</h4>
+          </div>
+          <div class="row">
+            <div class="retailprice"><h4>Size:</h4></div>
+            <br />
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+              <select name="option-3-1" class="form-control">
+                <option value="">Size</option>
+                <option value="10">XS</option>
+                <option value="11">S</option>
+                <option value="12">M</option>
+                <option value="13">L</option>
+                <option value="14">XL</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="retailprice"><h4>Color:</h4></div>
+            <br />
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+              <select name="option-3-1" class="form-control">
+                <option value="">Color</option>
+                <option value="10">Blue</option>
+                <option value="11">White</option>
+                <option value="12">Gray</option>
+                <option value="13">Brown</option>
+                <option value="14">Orange</option>
+                <option value="15">Green</option>
+              </select>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid"></div>

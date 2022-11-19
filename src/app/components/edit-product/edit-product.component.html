@@ -1,0 +1,85 @@
+<!-- ADD Product Page -->
+
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!--Header-->
+      <h4 class="title" id="myModalHeading">UPDATE PRODUCT DETAILS</h4>
+  
+      <!--Body-->
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+
+
+      <!-- bootstrapped -->
+      <form #form="ngForm" (ngSubmit)="updateProductDetails()" ngNativeValidate>
+        <div class="form-group row">
+          <label for="img" class="col-sm-2 col-form-label">Image Link</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="imgsrc" [(ngModel)]="productDetails.imgsrc" placeholder="Enter image link of product" required ngModel #img="ngModel">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="title" class="col-sm-2 col-form-label">Title</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="title" [(ngModel)]="productDetails.title" placeholder="Enter product's title" required ngModel #title="ngModel">
+          </div>
+        </div>
+        <div class="form-group row">
+            <label for="price" class="col-sm-2 col-form-label">Price</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="price" [(ngModel)]="productDetails.price" placeholder="Enter product's price" required ngModel #price="ngModel">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label">Description</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="description" [(ngModel)]="productDetails.description" placeholder="Enter product's description" ngModel #description="ngModel">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="quantity" class="col-sm-2 col-form-label">Quantity</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="quantity" [(ngModel)]="productDetails.quantity" placeholder="Enter product's quantity" required ngModel #quantity="ngModel">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="price" class="col-sm-2 col-form-label">Category</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="category" [(ngModel)]="productDetails.category" placeholder="Enter product's category" required ngModel #category="ngModel">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+              <label class="col-form-label col-sm-2 pt-0">Gender</label>
+              <div class="col-sm-10">
+                <div class="form-check-inline">
+                  <input class="form-check-input" id="rb-men" type="radio" name="gender" value="men" [checked]="gender=='Men'" ngModel #men="ngModel">
+                  <label class="form-check-label" for="men"> Men</label>
+                </div>
+                <div class="form-check-inline">
+                  <input class="form-check-input" id="rb-women" type="radio" name="gender" value="women" [checked]="gender=='Women'" ngModel #women="ngModel">
+                  <label class="form-check-label" for="women"> Women</label>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" (click)="close()">
+              Close
+            </button>
+            &nbsp;
+            <button
+              class="btn btn-primary"
+              type="submit"
+              [disabled]="form.invalid"
+            >
+              Submit
+            </button>
+          </div>
+       </form>
+    </div>
+  </div>
+  

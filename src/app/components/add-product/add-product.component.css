@@ -1,0 +1,25 @@
+h4 {
+    text-align: center;
+    font-family: Bodoni MT;
+    margin-top: 25px;
+    font-weight: bold;
+  }
+  .error {
+    color: red;
+  }
+
+  .modal-body{
+   padding:30px;
+  }
+  .form-group.row{
+    padding-bottom: 10px;
+  }
+  .toast-header{
+    background-color: #a8df98;
+  }
+  .me-auto, .toast-body{
+    color: darkgreen
+  }
+  .modal-footer .btn{
+    margin-right:15px;
+  }

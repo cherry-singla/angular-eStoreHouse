@@ -1,0 +1,63 @@
+.header {
+    text-align: center;
+    font-weight: bold;
+    /* font-family: "Bernard MT Condensed"; */
+    font-size:x-large;
+    margin-top: 10px;
+    color: rgba(2, 2, 2, 0.856);
+  }
+  .signIn {
+    text-align: center;
+    font-weight: bold;
+    font-family: Bodoni MT;
+    font-size: large;
+    margin-top: 20px;
+    color: black;
+  
+    float: right;
+  }
+  
+  .icon {
+    font-size: 22px;
+    margin-top: 15px;
+  
+    float: right;
+  }
+  a {
+    text-decoration: wavy;
+    color: black;
+  }
+  .navbar1 {
+    background-color: rgb(188, 225, 240);
+    box-shadow: 3px 3px 4px #888888;
+    width:100%;
+  }
+  
+  .navbar2 {
+    background-color: rgb(188, 225, 240);
+  
+    width:100%;
+  }
+  
+  .navLinks {
+    margin-left: 30px;
+    list-style-type:none;
+  }
+  
+  nav {
+    width:inherit;
+  }
+
+  .btn-outline-dark{
+    float: right;
+    padding-right: 4px;
+    padding-top: 4px;
+  }
+
+  #signInDiv{
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+  }
+
+  

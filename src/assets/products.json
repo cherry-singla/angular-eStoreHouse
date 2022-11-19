@@ -1,0 +1,123 @@
+  [
+      {
+        "imgsrc": "https://m.media-amazon.com/images/I/81Sa7rnJwVL._AC_UL320_.jpg",
+        "title": "Marks & Spencer",
+        "price": "2999",
+        "quantity": 7,
+        "gender": "Women",
+        "category": "Jeans",
+        "description": "Women's Regular Casual Pants",
+        "id": 1
+      },
+      {
+        "id": 2,
+        "imgsrc": "https://m.media-amazon.com/images/I/71JO7gU76UL._UY741_.jpg",
+        "title": "Octave Top",
+        "price": "725",
+        "description": "Casual Octave Top",
+        "quantity": 12,
+        "gender": "Women",
+        "category": "Top"
+      },
+      {
+        "id": 3,
+        "imgsrc": "https://m.media-amazon.com/images/I/71iICy1sSzL._AC_UL320_.jpg",
+        "title": "Polo T-shirt",
+        "description": "Polo Collar Neck T-Shirt",
+        "price": "649",
+        "quantity": 28,
+        "gender": "Women",
+        "category": "T-shirt"
+      },
+      {
+        "id": 4,
+        "imgsrc": "https://m.media-amazon.com/images/I/71b2EeWsVSL._AC_UL320_.jpg",
+        "title": "Levi's T-shirt",
+        "description": "Women's Regular T-Shirt",
+        "price": "549",
+        "quantity": 3,
+        "gender": "Women",
+        "category": "T-shirt"
+      },
+      {
+        "id": 5,
+        "imgsrc": "https://m.media-amazon.com/images/I/61U-pcvqSkL._AC_UL320_.jpg",
+        "title": "Levi's Jeans",
+        "description": "Women's Western Jeans",
+        "price": "3372",
+        "quantity": 11,
+        "gender": "Women",
+        "category": "Jeans"
+      },
+      {
+        "id": 6,
+        "imgsrc": "https://m.media-amazon.com/images/I/71Q7TpBEM-L._AC_UL320_.jpg",
+        "title": "Van Heusen Woman",
+        "description": "Women's Regular fit Shirt",
+        "price": "999",
+        "quantity": 40,
+        "gender": "Women",
+        "category": "Shirt"
+      },
+      {
+        "id": 7,
+        "imgsrc": "https://m.media-amazon.com/images/I/616xchp1ECL._AC_UL320_.jpg",
+        "title": "Denim Jeans",
+        "description": "1195 Denim Jeans",
+        "price": "900",
+        "quantity": 98,
+        "gender": "Men",
+        "category": "Jeans"
+      },
+      {
+        "id": 8,
+        "imgsrc": "https://m.media-amazon.com/images/I/71W5le6yqxL._AC_UL320_.jpg",
+        "title": "Levi's",
+        "price": "1019",
+        "description": "1195 Levi's NECK T-SHIRT",
+        "quantity": 34,
+        "gender": "Men",
+        "category": "T-shirt"
+      },
+      {
+        "id": 9,
+        "imgsrc": "https://m.media-amazon.com/images/I/818GeQkUL8L._AC_UL320_.jpg",
+        "title": "Puma",
+        "price": "890",
+        "description": "1195 Puma NECK T-SHIRT",
+        "quantity": 34,
+        "gender": "Men",
+        "category": "T-shirt"
+      },
+      {
+        "imgsrc": "https://m.media-amazon.com/images/I/81LGkFoaeeL._AC_UL320_.jpg",
+        "title": "COTTONOPOLIS LONDON",
+        "description": "1195 COTTONOPOLIS NECK T-SHIRT",
+        "price": "599",
+        "id": 10,
+        "quantity": 12,
+        "gender": "Men",
+        "category": "T-shirt"
+      },
+      {
+        "imgsrc": "https://m.media-amazon.com/images/I/81-zfzVUXqL._AC_UL320_.jpg",
+        "title": "Blog",
+        "description": "1195 Blog NECK T-SHIRT",
+        "price": "222",
+        "id": 11,
+        "quantity": 23,
+        "gender": "Men",
+        "category": "T-shirt"
+      },
+      {
+        "imgsrc": "https://m.media-amazon.com/images/I/616xchp1ECL._AC_UL320_.jpg",
+        "title": "CAMEL",
+        "description": "1195 CAMEL Fit Jeans",
+        "price": "999",
+        "id": 12,
+        "quantity": 56,
+        "gender": "Men",
+        "category": "Jeans"
+      }
+]
+  

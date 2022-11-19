@@ -1,0 +1,46 @@
+
+<div class="container mt-5 mb-5 p-20">
+  
+  <div class="d-flex flex-row">
+    <div class="col-md-4" [style.backgroundColor]="'black'">
+      <img src="../../../assets/images/loginPage-Hello.gif"  width="100%" height="100%" />
+    </div> 
+    <div class="col-md-8 pt-3">
+      <div *ngIf="error" class="alert alert-danger" role="alert" height="200px">
+        <strong>An Error occured: </strong>{{error}}
+      </div>
+      <div class="card card1 p-3">
+        <form [formGroup]="Form" (ngSubmit)="onSubmit()">
+          <div class="d-flex flex-column">
+            <div>
+              <img src="../../../assets/images/storehouse_logo.jpg" height="100" width="100" background-color="black"/>
+            </div>
+            <span class="login mt-3">{{isLoginPage ? 'Log in': 'Sign up'}}</span> </div>
+          <div class="input-field d-flex flex-column mt-3"> 
+            <!-- email -->
+            <span>Email</span> 
+            <input class="form-control" formControlName="email" placeholder="email@example.com"> 
+            <small *ngIf="!Form.get('email').valid && Form.get('email').touched" class="form-text-danger">Please enter valid email</small>
+            <!-- password -->
+            <span class="mt-3">Password</span> 
+            <input class="form-control" formControlName="password" type="password" placeholder="{{isLoginPage ? 'Enter Your Password': 'Set New Password'}}"> 
+            <small *ngIf="!Form.get('password').valid && Form.get('password').touched" class="form-text-danger">Please enter valid password</small>
+            <!-- Login/register button -->
+            <button class="mt-4 btn btn-dark d-flex justify-content-center align-items-center" type="submit">{{isLoginPage ? 'Login': 'Register'}}</button>
+            <!-- Forgot password text -->
+            <div class="mt-3 text1"> 
+              <span class="mt-3 forget">Forget Password?</span> 
+            </div>
+            <!-- Register/Sign-in link -->
+            <div class="text2 mt-4 d-flex flex-row align-items-center"> 
+              <span>{{isLoginPage ? 'Don\'t have an account?' : 'Already have an account?'}}      
+                <span class="register" (click)="switchMode()"> <u>{{isLoginPage ? 'Register here' : 'Sign In'}}</u></span>
+              </span> 
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

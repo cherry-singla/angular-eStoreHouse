@@ -1,0 +1,86 @@
+
+<div class="container-fluid">
+    <div class="row">
+      <h1 class="page_heading">MEN & WOMEN</h1>
+      <br />
+    </div>
+    <div class="row head">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <span style="font-family: Bodoni MT; font-size: large">Total: Products[{{ productsData.length }}]
+        </span>
+      </div>
+
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <p id="sort">
+          <span style="font-family: Bodoni MT; font-size: large"
+            >Sort By:</span
+          >
+
+          <select id="sort-by" (change)="sort($event)">
+            <option value="" selected disabled hidden>Sort By</option>
+            <option value="Name">Name</option>
+            <option value="Low">Low to High Price</option>
+            <option value="High">High to Low Price</option>
+          </select>
+        </p>
+
+        
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <button type="button" class="btn btn-secondary btn-sm"
+        routerLink="add-product"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"
+        ><img src="../../../assets/images/white_plus.png" width="15px" height="15px"> Add New Product</button>
+      </div>
+
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <button type="button" class="btn btn-secondary btn-sm">
+          <img src="../../../assets/images/white-filter.png" width="17px" height="17px"> Filter</button>
+      </div>
+    </div>
+    <div class="container">
+    
+    <div class="row">
+        
+        <div class="col-md-4 col-sm-6 col-lg-3 col-xs-12" *ngFor="let product of productsData">
+            <div class="product-grid2">
+                <div class="product-image2">
+                  <img class="pic-1" src="{{ product.imgsrc }}"> 
+                </div>
+                <div class="product-content">
+                    <h3 class="title">
+                      {{ product.title }}
+                    </h3>
+                    <span class="price">{{ product.price| currency:"INR":"symbol" }}</span>
+                    <div>
+                            <button title="Delete product" type="button" class="btn btn-light btn-floating" (click)="deleteProduct(product.prodId)">
+                                <img  src="../../../assets/images/delete.svg">
+                            </button>
+
+                            <button 
+                            title="Edit product details" 
+                            type="button" 
+                            class="btn btn-light btn-floating"
+                            routerLink="edit/{{product.prodId}}"
+                            routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}">
+                                <img src="../../../assets/images/edit_icon.svg">
+                            </button>
+
+                            <button 
+                            title="View product details" 
+                            type="button" 
+                            class="btn btn-light btn-floating"  
+                            routerLink="details/{{product.prodId}}"
+                            routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}">
+                                <img src="../../../assets/images/view.svg">
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
